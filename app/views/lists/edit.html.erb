@@ -6,7 +6,10 @@
   <%= f.text_field :title %>
 
   <h4>本文</h4>
+  <%= link_to "編集",edit_list_path(@list.id) %>
+  
   <%= f.text_area :body %>
+  
 
   <%= f.submit '保存' %>
 
